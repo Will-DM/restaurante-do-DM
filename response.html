@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmação de Contato</title>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Obrigado pelo Contato!</h1>
+        <p class="text-center">Recebemos suas informações e entraremos em contato em breve.</p>
+        <div id="responseDetails" class="mt-4">
+            <p><strong>Nome:</strong> <span id="responseName"></span></p>
+            <p><strong>E-mail:</strong> <span id="responseEmail"></span></p>
+            <p><strong>Mensagem:</strong> <span id="responseMessage"></span></p>
+        </div>
+    </div>
+    <script>
+        // Função para obter parâmetros da URL
+        function getQueryParam(param) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param);
+        }
+
+        // Preenche os dados no HTML
+        document.getElementById('responseName').textContent = getQueryParam('nome') || 'Não fornecido';
+        document.getElementById('responseEmail').textContent = getQueryParam('email') || 'Não fornecido';
+        document.getElementById('responseMessage').textContent = getQueryParam('mensagem') || 'Não fornecido';
+    </script>
+
+<script>
+    // Define o tempo de redirecionamento em milissegundos (5 segundos)
+    const redirectTime = 5000; // 5.000 ms = 5 segundos
+
+    // Função para redirecionar
+    function redirect() {
+        window.location.href = 'index.html'; // Substitua pelo URL para onde você deseja redirecionar
+    }
+
+    // Inicia o redirecionamento após o tempo especificado
+    setTimeout(redirect, redirectTime);
+</script>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="script/script.js">
+
+</body>
+</html>

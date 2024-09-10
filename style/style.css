@@ -1,0 +1,117 @@
+/* Estilos gerais */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5; /* Cor de fundo clara e neutra */
+    margin: 0;
+    padding: 0;
+}
+
+.hero {
+    position: relative;
+    background: url('https://www.example.com/imagem-hero.jpg') no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-text {
+    max-width: 600px;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente para melhor contraste */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hero-text h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    font-family: 'Georgia', serif;
+}
+
+.hero-text p {
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+}
+
+.btn-primary {
+    background-color: #ff6f61; /* Coral vibrante */
+    border: none;
+    border-radius: 5px;
+    padding: 12px 25px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #ff3b30; /* Coral escuro */
+}
+
+.about {
+    background-color: #ffffff; /* Branco */
+}
+
+.about img {
+    border-radius: 10px;
+}
+
+.menu {
+    background-color: #f7f7f7; /* Cinza claro */
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+    border-radius: 10px 10px 0 0;
+}
+
+.gallery {
+    background-color: #ffffff; /* Branco */
+}
+
+.gallery img {
+    border-radius: 10px;
+}
+
+.specifications {
+    background-color: #fffbf2; /* Bege claro */
+}
+
+.specifications-box {
+    background-color: #ffffff; /* Branco para o conteúdo */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact {
+    background-color: #f7f7f7; /* Cinza claro */
+}
+
+.contact-info {
+    margin-top: 20px;
+}
+
+footer {
+    background-color: #333333; /* Cinza escuro */
+    color: #ffffff;
+    text-align: center;
+}
+
+.social-media a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #ffffff; /* Branco */
+    margin: 0 10px;
+}
+
+.social-media a:hover {
+    color: #3498db; /* Azul claro */
+}
